@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    color: #fc036b;
+}
+.logo:hover{
+    color: blueviolet;
+    box-shadow: 2px 2px 2px 5px aliceblue;
+}
+/* Navbar */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+/* Navlinks */
+.navlinks{
+    display: flex;
+    justify-content: center;  
+}
+.navlinks li{
+    margin: 0 30px;
+    list-style: none;
+}
+.active{
+    color: #fc036b;
+    text-decoration:underline;
+    font-weight: bold;
+}
+body, html{
+    overflow-x: hidden;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('2.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.menubtn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* Events */
+section{
+    width:80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color:#49497e;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.events .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+p{
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+.events .ctn{
+    margin-top: 30px;
+}
+/* New Section(Explore) */
+.explore{
+    width:100%;
+    height: 100vh;
+    background-image: url('6.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+}
+.explore-content{
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.explore-content h1{
+    font-size: 7vmin;
+    
+}
+.explore-content .line{
+    margin-bottom: 50px;
+}
+.explore-content p{
+    color: white;
+}
+.explore-content .ctn{
+    margin-top: 40px;
+}
+.tourism .img-gallery{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.content-col{
+    width: 40%;
+}
+.image-col{
+    width: 60%; 
+}
+.img-gallery img{
+    max-width: 250px;
+    margin: 10px;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: #484872;
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+}
+.content-col .ctn{
+    margin-left: -100px;
+}
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #49497e;
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+.ctn:hover{
+    color: aqua;
+    box-shadow: 2px 2px 2px 2px blanchedalmond;
+}
+.li:hover{
+    color: aquamarine;
+}
+
+@media only screen and (max-width:850px){
+    .menubtn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .navlinks{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .navlinks li{
+        margin: 30px auto;
+
+    }
+    /* Events Responsive */
+    .row{
+        flex-direction: column;
+    }
+    .col img{
+        max-width: 90%;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    /* Explore Section Responsiveness */
+    .explore-content{
+        width: 100%;
+    }
+    .tourism .col{
+        width: 100%;
+    }
+    .img-gallery{
+        justify-content: center;
+        align-items: center;
+    }
+    .img-gallery img{
+        width: 90%;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
